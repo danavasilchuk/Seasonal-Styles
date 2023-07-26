@@ -32,9 +32,19 @@
     }
 
     ul.colors{
-	display:inline-block;
-	margin-left:5%;
+        display:inline-block;
+        margin-left:5%;
+    }
+
+    div#myDiv > p{
+        background-color: yellow;
+    }
+
+    div#yetAnotherDiv li:nth-child(even){
+        background-color:yellow;
 }
+
+        
   </style>
  </head>
  <body>
@@ -53,7 +63,7 @@
 	</header>
      
    <main class="wrapper">
-    <header><h3>Outfitter for All Seasons!</h3></header>
+    <header><h3 id="slogan">Outfitter for All Seasons!</h3></header>
     <p>
     The colors of the seasonal images are as follows:
         <ul class="colors">
@@ -84,6 +94,8 @@
     </p>
     </footer>
   </main>
-  <script src="js/main.js"></script>
+  <script src="js/main.js"></script> 
+  <script src="js/season.styles.js"></script> 
   </body>
 </html>
+
